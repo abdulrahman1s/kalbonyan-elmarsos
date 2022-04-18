@@ -1,7 +1,9 @@
+<a href="https://www.linkedin.com/in/abdulrahmann/"><img alt="Linkedin" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
 # Kalbonyan Elmarsos | كالبنيان المرصوص
 
 
-## Programming Foundations
+## Programming Foundations 
 
 - [X] [Fundamentals](foundations/fundamentals)
 - [ ] [Beyond the Fundamentals](foundations/beyond-the-fundamentals)
