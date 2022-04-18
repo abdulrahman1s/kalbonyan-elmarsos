@@ -10,18 +10,18 @@
 - [ ] [Algorithms](foundations/algorithms)
 - [ ] [Design Patterns](foundations/design-patterns)
 - [ ] [Databases](foundations/databases)
-- [ ] [APIs and Web Services](foundations/apis-and-web-Services)
+- [ ] [APIs and Web Services](foundations/apis-and-web-services)
 - [ ] [Software Testing/QA](foundations/software-testing)
-- [ ] [Learning GitHub](foundations/github)
+- [X] [Learning GitHub](foundations/github)
 
 
 ## HTML and CSS
 
 - [ ] [Build Responsive Real-World Websites with HTML and CSS](html-and-css)
 
-## JavaScript
+## Mern Stack
 
-- [X] [The Modern JavaScript Bootcamp](javascript)
+- [X] [JavaScript](javascript)
 - [ ] [ReactJS](javascript/react)
 - [ ] [NodeJS](javascript/node)
 
