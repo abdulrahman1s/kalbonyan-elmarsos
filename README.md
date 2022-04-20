@@ -2,11 +2,10 @@
 
 # Kalbonyan Elmarsos | كالبنيان المرصوص
 
-
 ## Programming Foundations 
 
 - [X] [Fundamentals](foundations/fundamentals)
-- [ ] [Beyond the Fundamentals](foundations/beyond-the-fundamentals)
+- [X] [Beyond the Fundamentals](foundations/beyond-the-fundamentals)
 - [ ] [Object Oriented Design](foundations/object-oriented-design)
 - [ ] [Data Structures](foundations/data-structures)
 - [ ] [Algorithms](foundations/algorithms)
@@ -21,7 +20,7 @@
 
 - [ ] [Build Responsive Real-World Websites with HTML and CSS](html-and-css)
 
-## Mern Stack
+## MERN Stack
 
 - [X] [JavaScript](javascript)
 - [ ] [ReactJS](javascript/react)
