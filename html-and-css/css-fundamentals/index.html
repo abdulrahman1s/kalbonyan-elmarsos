@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <title>The basic language of the web: HTML</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Internal CSS -->
+  <!-- <style>
+    h1 {
+      color: blue;
+    }
+  </style> -->
 </head>
 
 <body>
@@ -18,6 +27,10 @@
   <!-- Top part of web page -->
   <header>
     <!-- Note: We should use <h1> only once. -->
+    
+    <!-- Inline CSS
+    Note: Don't use this in real world webpages
+    <element style="color: blue"></element> -->
     <h1>📘 The Code Magazine</h1>
     <!-- nav stand for navigation. -->
     <nav>
@@ -37,7 +50,7 @@
       <img src="assets/laura-jones.jpg" alt="Picture of Laura Jones" width="50" height="50">
       <!-- Note: Use of <b> isn't a good practice. -->
       <!-- Use <strong> instead of <b> -->
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
       <!-- Note: <img> have no closing tag. -->
       <img src="assets/post-img.jpg" alt="HTML code on a screen" width="500" height="200" />
     </header>
@@ -103,27 +116,27 @@
     <!-- Challenge: Create a related posts section. -->
     <!-- aside stands for secondary information -->
     <aside>
-      <h3>Related posts</h3>
-      <ul>
+      <h4>Related posts</h4>
+      <ul class="related">
         <li>
           <img src="assets/related-1.jpg" width="75" alt="Related one">
           <a href="#">How to learn Web Development</a>
-          <p>By Jones</p>
+          <p class="related-author">By Jones</p>
         </li>
         <li>
           <img src="assets/related-2.jpg" width="75" alt="Related two">
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Jim</p>
+          <p class="related-author">By Jim</p>
         </li>
         <li>
           <img src="assets/related-3.jpg" width="75" alt="Related three">
           <a href="#">Why JavaScript is awesome</a>
-          <p>By someone else</p>
+          <p class="related-author">By someone else</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2022 by the Code Magazine.</footer>
+    <footer><p id="copyright">Copyright &copy; 2022 by the Code Magazine.</p></footer>
   </article>
 </body>
 </html>
