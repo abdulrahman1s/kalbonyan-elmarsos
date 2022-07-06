@@ -1,7 +1,7 @@
 # Build Responsive Real-World Websites with HTML and CSS
 
 
-# Quick Jump
+## Quick Jump
 - [HTML Fundamentals](#html-fundamentals)
 - [CSS Fundamentals](#css-fundamentals)
 - [CSS Layouts](#css-layouts)
@@ -10,7 +10,6 @@
 
 
 ## HTML Fundamentals
-[Go Back 🔝](#quick-jump)
 
 ### What is HTML?
 - Hypertext Markup language
@@ -43,6 +42,7 @@
 ### What is semantic HTML means?
 That curation elements have a meaning or a purpose attached to them.
 
+[Go Back 🔝](#quick-jump)
 
 ## CSS Fundamentals
 
@@ -89,6 +89,97 @@ rgba(0, 255, 255, 0.3)
 ```
 
 2. Hexadecimal Notation
+- Instead using a scale from `0` to `255`
+- `ff` equal to `255` but in hexadecimal
+- Shorthand when all colors are identical pairs `#0ff`
+- When colors in all channels are the same we get *grey color*
+
+
+```css
+#00ffff
+ |  | |----------> Blue
+ |  |----> Green
+ -> Red
+```
+
+
+### Resolving conflict
+
+> Selectors are sort by priority
+
+1. ID Selector `#`
+2. Class Selector `.`
+3. Element Selector `<any>`
+4. Universal Selector `*`
+
+
+### The Box Model
+- Content: Text, Images, etc...
+- Border: A line around the element
+- Padding: Invisible space around the content
+- Margin: Space outside of the element
+- Fill area: Area that gets filled with background
+- Size can by specified by width and height
+
+![the-box-model](https://www.csssolid.com/images/box-model/css-box-model.png)
+
+
+## Element height and width calculation
+- width: padding left and right + border left and right + width
+- height: padding top and bottom + border top and bottom + height
+
+##### Notice
+- This is the default behavior but we can change it
+
+
+## Block-level Elements
+- Elements are formatted visually as blocks
+- Elements occupy **100%** of parent element width
+- Elements are stacked vertically by default
+- The box-model applies as showed earlier
+
+##### Notice
+- Most of the elements has this default behavior applied to them `display: block;`
+
+
+## Inline Elements
+- Occupies only the needed space for its content
+- Causes no line-break after or before the element
+- Box model applies in a different way (height and width don't apply)
+- Padding and margins are applied only horizontally (left & right)
+
+
+## Inline-block Elements
+- Looks like inline from the outside but behaves like block-level on the inside
+- Occupies only content's space
+- Causes no line-break
+- Box-model applies as showed `display: inline-block;`
+
+
+
+## Normal Flow VS. Absolute Positioning
+
+### Normal Flow
+1. Default positioning
+2. Elements is in flow
+3. Elements are simply laid out according to their order in the HTML
+
+```css
+element {
+   display: relative;
+}
+```
+
+### Absolute Positioning
+1. Elements is removed from the normal flow
+2. No impact on surrounding elements, might overlap them
+3. We use `top`, `bottom`, `right` and `left` to offset the element (relatively positioned from container)
+
+```css
+element {
+   display: absolute;
+}
+```
 
 
 [Go Back 🔝](#quick-jump)

@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>CSS Challenge #2</title>
+    <title>CSS Challenge #3</title>
 
     <style>
         * {
@@ -22,10 +22,25 @@
 
         article {
             border: 10px solid black;
+            position: relative;
+        }
+
+        article::before {
+            content: "SALE";
+            background-color: red;
+            padding: 5px 20px;
+            color: white;
+            position: absolute;
+            top: -23px;
+            left: -40px;
+            font-weight: bold;
+            letter-spacing: 4px;
         }
 
         .more-info:link {
+            display: inline-block;
             color: black;
+            margin-bottom: 20px;
         }
 
         .more-info:hover {
@@ -85,6 +100,41 @@
         .description {
             margin-bottom: 8px;
         }
+
+        .colors {
+            list-style: none;
+        }
+
+        .colors div {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .brown {
+            background-color: brown;
+        }
     </style>
 </head>
 
@@ -98,6 +148,16 @@
             <p class="description">Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe
                 style.</p>
             <a href="#" class="more-info">More information &RightArrow;</a>
+
+            <ul class="colors">
+                <div class="black"></div>
+                <div class="blue"></div>
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+                <div class="brown"></div>
+            </ul>
+
             <h3 class="details-title">Product details</h3>
             <ul class="details">
                 <li>Lightweight</li>
@@ -108,4 +168,5 @@
         </article>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>CSS Challenge #1</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.4; /* Missing from my implementation */
+        }
+
+        article {
+            border: 10px solid black;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+
+        .title {
+            background-color: #f7f7f7;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .details-title {
+            text-transform: uppercase;
+        }
+
+        .add-button {
+            color: white;
+            background-color: black;
+            text-transform: uppercase;
+            border: none; /* Missing from my implementation */
+            cursor: pointer; /* Missing from my implementation */
+        }
+
+        .add-button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .details {
+            list-style: square;
+        }
+
+        .shopping {
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5)
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h2 class="title">Converse Chuck Taylor All Star Low Top</h2>
+        <img src="assets/challenges.jpg" alt="Converse Chuck Taylor All Star Low Top" width="250">
+        <p class="price"><strong>$65.00</strong></p>
+        <p class="shopping">Free Shopping</p>
+        <p>Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe style.</p>
+        <a href="#">More information &RightArrow;</a>
+        <h3 class="details-title">Product details</h3>
+        <ul class="details">
+            <li>Lightweight</li>
+            <li>Lightly padded</li>
+            <li>Iconic</li>
+        </ul>
+        <button class="add-button">Add to curt</button>
+    </article>
+</body>
+
+</html>
