@@ -186,6 +186,55 @@ element {
 
 
 ## CSS Layouts
+
+
+### What does "layout" mean?
+- The way content is placed and arranged on a webpage
+- Gives the page a visual structure into which we place our content
+- Building a layout: arranging page elements into a visual structure instead of having them placed one after another
+
+### The 3 ways of building layouts
+- Float: The old way of building layouts of all sizes
+- Flex-box: Modern way of laying out elements in 1-dimensional grid
+- Grid: For laying in a fully fledged 2-dimensional grid
+
+
+### The box-model with **Box-sizing: border-box**
+- Final element width = the exact width you specified
+- Final element height = the exact height you specified
+
+#### Notice
+- The default behavior without `border-box` mentioned at [there](#element-height-and-width-calculation)
+
+
+### What is Flexbox?
+- Is a set of related CSS properties for building 1-dimensional layouts
+- The main idea behind flexbox is that empty space inside a container element can be automatically divided by its child elements
+- Flexbox makes it easy to automatically align items to one another inside a parent container
+- Flexbox solves common problems such as vertical contering and creating equal-height columns
+
+
+#### Notice
+- Toggle by adding `display: flex`
+
+
+### Flex container
+- `gap` | To create space without margin
+- `justify-content` | To align along main axis
+- `align-items` | To algin along cross axis
+- `flex-direction` | To define which the main axis
+- `flex-wrap` | To allow items to wrap info a new line if there are too large
+- `align-content` | Only applies when there are multiple lines
+
+
+### Flex items
+- `align-self` | To overwrite align-items
+- `flex-grow` | To allow an element to grow
+- `flex-shrink` | To allow elemnt to strink
+- `flex-basis` | To define an item width 
+- `flex` | Shorthand for `flex-grow,shrink,basis`
+- `order` | Controls order of items 
+
 [Go Back 🔝](#quick-jump)
 
 

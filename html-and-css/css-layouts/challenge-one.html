@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <title>CSS Layouts Challenge #1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.4;
+            /* Missing from my implementation */
+        }
+
+        .container {
+            width: 825px;
+            margin: 30px auto;
+        }
+
+        article {
+            border: 10px solid black;
+            position: relative;
+        }
+
+        article::before {
+            content: "SALE";
+            background-color: red;
+            padding: 5px 20px;
+            color: white;
+            position: absolute;
+            top: -23px;
+            left: -40px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        .more-info:link {
+            display: inline-block;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .more-info:hover {
+            text-decoration: none;
+        }
+
+
+        .title {
+            background-color: #f7f7f7;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 20px 0;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 12px;
+            float: left;
+        }
+
+
+        .add-button {
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            text-transform: uppercase;
+            border: none;
+            border-top: 10px solid black;
+            /* Missing from my implementation */
+            cursor: pointer;
+            /* Missing from my implementation */
+            width: 100%;
+            padding: 14px 0;
+        }
+
+        .add-button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .details-title {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .details {
+            list-style: square;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        .details li {
+            margin-bottom: 18px;
+        }
+
+        .shopping {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .description {
+            margin-bottom: 8px;
+            float: left;
+        }
+
+        .colors {
+            list-style: none;
+        }
+
+        .colors div {
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+        .section-one {
+            float: left;
+            width: 240px;
+        }
+
+        .section-two {
+            float: left;
+            margin-left: 40px;
+            width: 240px;
+        }
+
+        .section-three {
+            float: right;
+            margin-left: 40px;
+            width: 240px;
+        }
+
+
+        .shopping {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article>
+            <h2 class="title">Converse Chuck Taylor All Star Low Top</h2>
+
+            <div class="section-one">
+                <img src="assets/challenges.jpg" alt="Converse Chuck Taylor All Star Low Top" width="250">
+            </div>
+
+            <div class="section-two">
+                <p class="price"><strong>$65.00</strong></p>
+                <p class="shopping">Free Shopping</p>
+                <p class="description">Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe
+                    style.</p>
+                <a href="#" class="more-info">More information &RightArrow;</a>
+
+                <ul class="colors">
+                    <div class="black"></div>
+                    <div class="blue"></div>
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                    <div class="brown"></div>
+                </ul>
+            </div>
+
+            <div class="section-three">
+                <h3 class="details-title">Product details</h3>
+                <ul class="details">
+                    <li>Lightweight</li>
+                    <li>Lightly padded</li>
+                    <li>Iconic</li>
+                </ul>
+            </div>
+
+            <button class="add-button">Add to curt</button>
+        </article>
+    </div>
+</body>
+
+</html>
